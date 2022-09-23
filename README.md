@@ -13,24 +13,36 @@ It mixes all the letters in the words of a text but you can still read it becaus
 - make (obviously)
 - gcc (no idea of which version, let's just say it will always work)
 
-### Use the script
+### Base
 
-    # make target
+    $ git clone https://github.com/yqnk/mixy.git
 
 ### Installation
 
-    # make install
+Should be in the repo, then:
+    
+    $ make install
 
 ### Uninstall
 
-    # make uninstall
+Should be in the repo, then:
+
+    $ make uninstall
+
+### Other
+ 
+It is possible to just do:
+
+    $ make target
+
+If you want to build just the main output file without installing it.
 
 ### Usage
 
 #### Help
     
-    # mixy --help
-    # mixy -h
+    $ mixy --help
+    $ mixy -h
 
 #### Do actually something
 
