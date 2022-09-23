@@ -6,6 +6,8 @@ It mixes all the letters in the words of a text but you can still read it becaus
 
 ## Getting Started
 
+(Windows OS is currently not supported).
+
 ### Prerequisites
 
 - make (obviously)
