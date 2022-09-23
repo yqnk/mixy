@@ -33,7 +33,7 @@ Should be in the repo, then:
  
 You can:
 
-    $ make target
+    $ make default
 
 If you want to build just the main output file without installing it.
 
