@@ -1,8 +1,25 @@
-target:
-	gcc -Wall main.c mix.c -o main
-install:
-	gcc -Wall main.c mix.c -o main
-	mv main mixy
-	sudo mv mixy /usr/local/bin/
+CC ?= cc
+CFLAGS += -Wall
+
+DESTDIR ?=
+PREFIX ?= /usr/local
+BINDIR ?= /bin
+prefix ?= $(DESTDIR)$(PREFIX)
+bindir ?= $(prefix)$(BINDIR)
+
+INSTALL ?= install -D
+RM ?= rm -f
+
+.PHONY: default
+default: mixy
+
+mixy: main.c mix.c
+	$(CC) $(CFLAGS) $^ -o $@
+
+.PHONY: install
+install: mixy
+	$(INSTALL) mixy $(bindir)
+
+.PHONY: uninstall
 uninstall:
-	sudo rm /usr/local/bin/mixy
+	$(RM) $(bindir)/mixy

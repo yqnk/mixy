@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("error: read (shuffle -h) :)");
+        printf("error: read help (--help)");
         return 2;
     }
 }
