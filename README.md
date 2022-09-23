@@ -31,7 +31,7 @@ Should be in the repo, then:
 
 ### Other
  
-It is possible to just do:
+You can:
 
     $ make target
 
